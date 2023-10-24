@@ -1,0 +1,26 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Zipping
+        uses: thedoctor0/zip-release@main
+        with:
+          type: zip
+          filename: release.zip
+          directory: ./build
+
+      - name: Upload Release
+        uses: ncipollo/release-action@main
+        with:
+          artifacts: ./build/release.zip
+          token: ${{ secrets.GITHUB_TOKEN }}
+          allowUpdates: true
