@@ -18,10 +18,10 @@ jobs:
         with:
           type: zip
           filename: release.zip
-          directory: ./zip_dir
+          directory: ./build
 
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: ./zip_dir/release.zip
+          artifacts: ./build/release.zip
           allowUpdates: true
