@@ -19,7 +19,7 @@ jobs:
           directory: ./zip_dir
 
       - name: Upload Release
-        uses: ncipollo/release-action@main
+        uses: ncipollo/release-action@v1
         with:
           artifacts: ./zip_dir/release.zip
           allowUpdates: true
