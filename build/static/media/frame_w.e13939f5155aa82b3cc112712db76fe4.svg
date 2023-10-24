@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113px" height="162px" viewBox="0 0 113 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle Copy 5</title>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#8389A2" offset="0%"></stop>
+            <stop stop-color="#777D97" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="90" y="40" width="112.5" height="162" rx="6"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="112.5" height="162" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="lightmode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="5,4">
+        <g id="defult-display-w" transform="translate(-843.000000, -223.000000)" fill="url(#linearGradient-1)" stroke="#AAB0C8" stroke-width="2">
+            <g id="底-copy" transform="translate(753.000000, 183.000000)">
+                <use id="Rectangle-Copy-5" mask="url(#mask-3)" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>
